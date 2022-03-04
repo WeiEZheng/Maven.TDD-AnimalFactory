@@ -14,7 +14,6 @@ import java.util.Date;
  */
 public class CatTest {
     //Given setup
-
     private String givenName1 = "CatName";
     private Date givenBirthDate1 = new Date();
     private Integer givenId1 = 1;
@@ -100,6 +99,4 @@ public class CatTest {
     public void checkMammalInheritance(){
         Assert.assertTrue(cat1 instanceof Mammal);
     }
-    // TODO - Create test to check Animal inheritance; google search `java instanceof keyword`
-    // TODO - Create test to check Mammal inheritance; google search `java instanceof keyword`
 }
