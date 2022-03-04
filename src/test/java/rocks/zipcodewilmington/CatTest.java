@@ -39,5 +39,17 @@ public class CatTest {
         Assert.assertEquals(givenBirthDate, retrievedBirthDate);
         Assert.assertEquals(givenId, retrievedId);
     }
+    @Test
+    public void setNameTest(){
+        // Given
+        String givenName = "CatName";
+        Date givenBirthDate = new Date();
+        Integer givenId = 1;
+        //When
+        Cat cat = new Cat(givenName,givenBirthDate,givenId);
+        cat.setName("CatNameChanged");
 
+        String actualName = cat.getName();
+        Assert.assertEquals(givenName,actualName);
+    }
 }
