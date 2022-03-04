@@ -3,7 +3,9 @@ package rocks.zipcodewilmington;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import rocks.zipcodewilmington.animals.Animal;
 import rocks.zipcodewilmington.animals.Cat;
+import rocks.zipcodewilmington.animals.Mammal;
 
 import java.util.Date;
 
@@ -12,6 +14,7 @@ import java.util.Date;
  */
 public class CatTest {
     //Given setup
+
     private String givenName1 = "CatName";
     private Date givenBirthDate1 = new Date();
     private Integer givenId1 = 1;
@@ -91,7 +94,11 @@ public class CatTest {
     }
     @Test
     public void checkAnimalInheritance(){
-
+        Assert.assertTrue(cat1 instanceof Animal);
+    }
+    @Test
+    public void checkMammalInheritance(){
+        Assert.assertTrue(cat1 instanceof Mammal);
     }
     // TODO - Create test to check Animal inheritance; google search `java instanceof keyword`
     // TODO - Create test to check Mammal inheritance; google search `java instanceof keyword`
