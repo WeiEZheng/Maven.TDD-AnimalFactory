@@ -29,7 +29,5 @@ public class CatHouse {
         return catHouse.getNumberOfAnimals();
     }
 
-    public static void clear() {
-        catHouse.clear();
-    }
+    public static void clear() {catHouse.clear();}
 }
