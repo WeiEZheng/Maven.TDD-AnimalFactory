@@ -19,7 +19,6 @@ public class DogTest {
     private String givenName2 = "DogName1";
     private Date givenBirthDate2 = new Date();
     private Integer givenId2 = 2;
-    // TODO - Create tests for `new Dog(String name, Date birthDate, Integer id)`
     @Test
     public void constructorTest() {
         // When
